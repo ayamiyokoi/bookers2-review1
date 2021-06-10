@@ -20,6 +20,7 @@
             <%= render 'favorites/favorite', book: book %>
             </div>
         </td>
+        <td><%= link_to "コメント数：#{book.book_comments.count}", book_path(book) %></td>
       </tr>
     <% end %>
   </tbody>
